@@ -16,6 +16,10 @@ jobs:
           node-version: 18
           cache: npm
 
+      - name: secrets check
+        run: |
+          echo ${{ secrets.AWS_ACCESS_KEY_ID }}
+
       - name: install packages
         run: |
           npm install
