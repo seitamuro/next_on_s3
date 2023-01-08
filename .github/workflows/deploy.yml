@@ -37,4 +37,4 @@ jobs:
 
       - name: Upload file to S3
         run: |
-          aws s3 cp out/ s3://${{ secrets.S3_UPLOAD_BUCKET }}/ --quiet
+          aws s3 cp out/ s3://${{ secrets.S3_UPLOAD_BUCKET }}/ --recursive
