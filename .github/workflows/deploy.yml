@@ -18,7 +18,7 @@ jobs:
 
       - name: secrets check
         run: |
-          echo ${{ secrets.AWS_ACCESS_KEY_ID }}
+          echo ${{secrets.AWS_ACCESS_KEY_ID}}
 
       - name: install packages
         run: |
