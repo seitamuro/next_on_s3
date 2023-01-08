@@ -17,10 +17,8 @@ jobs:
           cache: npm
 
       - name: secrets check
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         run: |
-          echo ${{AWS_ACCESS_KEY_ID}}
+          echo "${{ secrets.AWS_ACCESS_KEY_ID }}"
 
       - name: install packages
         run: |
