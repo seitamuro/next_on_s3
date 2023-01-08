@@ -18,7 +18,7 @@ jobs:
 
       - name: secrets check
         run: |
-          echo "secrets = ${{ secrets.AAA }}"
+          echo "secrets = ${{ secrets.Secrets.AAA }}"
 
       - name: install packages
         run: |
